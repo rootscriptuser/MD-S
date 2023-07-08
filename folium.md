@@ -59,4 +59,9 @@ map.save(outfile='regions.html')
 
 ```
 
+# Online resources
+* https://github.com/python-visualization/folium/blob/main/examples/
+* https://github.com/lennardv2/Leaflet.awesome-markers
+* https://github.com/bradtraversy/python_folium_example/
+* https://github.com/stefanb/gurs-rpe
 
