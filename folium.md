@@ -1,5 +1,20 @@
 # FOLIUM TUTORIAL
 
+# creating virtual env
+
+```bash
+
+mkdir projectname
+cd projectname
+mkdir templates static
+
+python3 -m venv .venv
+pip3 install flask folium geojson
+pip freze >> req.txt
+. .venv/bin/activate
+flask run --debug
+```
+
 # simple Flask app
 ```pytohn
 from flask import Flask, render_template, redirect
@@ -24,7 +39,7 @@ if __name__ == "__main__":
 ```python
 import folium
 from folium.plugins import MarkerCluster, MousePosition
-# creating map object w/ degrees
+
 map=folium.Map(
     location=[45.92736, 14.972],
     zoom_start=8
@@ -40,9 +55,8 @@ folium.GeoJson('regions.json', name='regions', style_function=lambda feature: {
         "dashArray": "5, 5",
     }).add_to(map)
 
-#folium.features.CustomIcon('tower.png', icon_size=(26, 35)).add_to(map)
-geo_map=map._repr_html_()
-
 map.save(outfile='regions.html')
 
 ```
+
+
