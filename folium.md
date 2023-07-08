@@ -1,6 +1,6 @@
 # FOLIUM TUTORIAL
 
-# creating virtual env
+# Creating virtual env
 
 ```bash
 mkdir projectname
@@ -14,7 +14,7 @@ pip freze >> req.txt
 flask run --debug
 ```
 
-# simple Flask app
+# Simple Flask app
 ```pytohn
 from flask import Flask, render_template, redirect
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     app.run()
 ```
 
-# generating geojson map
+# Generating geojson map
 ```python
 import folium
 from folium.plugins import MarkerCluster, MousePosition
@@ -55,11 +55,10 @@ folium.GeoJson('regions.json', name='regions', style_function=lambda feature: {
     }).add_to(map)
 
 map.save(outfile='regions.html')
-
 ```
 
-# json to geojson
-```
+# Json to geojson
+```python
 import folium
 import json
 from geojson import Point, Feature, FeatureCollection, dump
