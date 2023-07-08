@@ -3,7 +3,6 @@
 # creating virtual env
 
 ```bash
-
 mkdir projectname
 cd projectname
 mkdir templates static
@@ -57,6 +56,35 @@ folium.GeoJson('regions.json', name='regions', style_function=lambda feature: {
 
 map.save(outfile='regions.html')
 
+```
+
+# json to geojson
+```
+import folium
+import json
+from geojson import Point, Feature, FeatureCollection, dump
+
+nodesfile = open('nodes.json', 'r')
+nodes = json.load(nodesfile)
+nodesfile.close()
+
+features = []
+
+for i in nodes:
+    type_=(i['type'])
+    callsing=(i['callsign'])
+    name=(i['name'])
+    url=(i['url'])
+    coordinates=(i['coordinates'])
+
+    point = Point((coordinates))    
+    features.append(Feature(geometry=point))
+
+
+feature_collection = FeatureCollection(features)
+
+with open('myfile.geojson', 'w') as f:
+   dump(feature_collection, f)
 ```
 
 # Online resources
