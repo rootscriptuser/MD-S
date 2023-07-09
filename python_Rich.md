@@ -94,5 +94,10 @@ users = json.loads(urlopen("https://randomuser.me/api/?results=30").read())["res
 user_renderables = [Panel(get_content(user), expand=True) for user in users]
 console.print(Columns(user_renderables))
 ```
-
+# More console
+```python3
+from rich.console import Console
+console = Console()
+console.print("Some lorem ipsum text.", style="bold underline red on white")
+```
 
