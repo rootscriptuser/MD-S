@@ -97,7 +97,17 @@ console.print(Columns(user_renderables))
 # More console
 ```python3
 from rich.console import Console
+from rich.text import Text
+
 console = Console()
 console.print("Some lorem ipsum text.", style="bold underline red on white")
+
+text = Text("Hello bello")
+text.stylize("bold magenta", 8,6)
+console.print(text)
+
+console.print("Successfull", style="success")
+console.print("errr", style="error")
+console.print("ops [error] failed [/error]")
 ```
 
