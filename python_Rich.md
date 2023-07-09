@@ -110,4 +110,29 @@ console.print("Successfull", style="success")
 console.print("errr", style="error")
 console.print("ops [error] failed [/error]")
 ```
+# Markdown
+
+```pytohn
+from rich.console import Console
+from rich.markdown import Markdown
+
+some_markdown='''
+# header
+
+> some text in and out
+
+1. first point
+1. second point
+'''
+
+console=Console()
+md=Makrdown(some_markdown)
+console.print(md)
+```
+# Save as html
+```python
+# to add
+consoole.save_html("index.html")
+
+```
 
