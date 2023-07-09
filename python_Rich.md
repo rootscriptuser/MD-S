@@ -132,7 +132,7 @@ console.print(md)
 # Save as html
 ```python
 # to add
-consoole.save_html("index.html")
+console.save_html("index.html")
 
 ```
 
