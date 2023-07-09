@@ -1,5 +1,13 @@
 # Python library Rich
 
+# Help && Inspect
+```python
+import rich
+from rich import inspect
+
+inspect(rich)
+print(help(rich))
+```
 ## Progress bar example
 ```python
 from rich.progress import track
@@ -86,15 +94,5 @@ users = json.loads(urlopen("https://randomuser.me/api/?results=30").read())["res
 user_renderables = [Panel(get_content(user), expand=True) for user in users]
 console.print(Columns(user_renderables))
 ```
-# Help && Inspect
-```python
-import rich
-from rich import inspect
 
-inspect(rich)
-print(help(rich))
-```
 
-```python
-
-```
