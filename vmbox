@@ -3,3 +3,4 @@ sudo apt install -y terminator vim tmux
 
 sudo apt update && sudo apt upgrade
 sudo apt install build-essential dkms linux-headers-$(uname -r)
+# run autorun.run
