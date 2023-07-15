@@ -6,4 +6,5 @@ firefox
 procex
 PuTTy
 Chocolatey
+ventoy
 ```
