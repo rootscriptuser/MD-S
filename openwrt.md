@@ -1,5 +1,10 @@
 # OPENWRT CHEAT SHEET
 
+# Basics
+```
+ssh root@192.169.0.1
+route
+cat /etc/hosts
 ```
 opkg update
 opkg list
@@ -14,6 +19,7 @@ opkg install luci-app-*
 tcpdump-mini
 adblock
 tmux
+nmap
 ```
 # cool apps to try
 ```
