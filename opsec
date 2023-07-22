@@ -4,6 +4,9 @@
 
 * promotes opensource stuff
 * about:config
+* not on WINDOWS
+* tracking number on WIN
+
 # arkenfox/user.js
 
 * canvas fingerprinting
@@ -11,3 +14,6 @@
 * special profiles
 * spoofing user agent
 * harden securty.ssl2
+* reffer header
+* uBLock Origin
+* private windows
