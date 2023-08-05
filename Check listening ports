@@ -1,0 +1,13 @@
+cat /etc/services
+$ grep -w '80/tcp' /etc/services
+$ grep -w '443/tcp' /etc/services
+$ grep -E -w '22/(tcp|udp)' /etc/services
+
+sudo netstat -tulpn | grep LISTEN
+
+sudo lsof -i -P -n | grep LISTEN
+
+sudo nmap -sT -O localhost
+$ sudo nmap -sU -O 192.168.2.254 ##[ list open UDP ports ]##
+$ sudo nmap -sT -O 127.0.0.1 ##[ list open TCP ports ]##
+$ sudo nmap -sTU -O 192.168.2.24
