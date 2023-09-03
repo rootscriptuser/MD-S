@@ -11,3 +11,27 @@ xmodmap -e "keycode 66 = Escape NoSymbol Escape"        #this will make Caps Loc
 
 ` xmodmap .xmodmap `
 
+
+# DEBIAN
+
+
+```
+    Run:
+
+    cd /etc/default/
+    vim keyboard
+
+    There you will see the line:
+
+    XKBOPTIONS=""
+
+    Change it to:
+
+    XKBOPTIONS="caps:swapescape"
+
+    Exit Vim with save:
+
+    :wqa
+
+    Reboot.
+```
