@@ -1,4 +1,4 @@
-# You can use xmodmap in terminal to swap Caps Lock with Esc:
+# Use xmodmap in terminal to swap Caps Lock with Esc
 ```
 xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"   #this will make Esc to act as Caps Lock
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"        #this will make Caps Lock to act as Esc
