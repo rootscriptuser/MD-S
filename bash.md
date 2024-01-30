@@ -308,3 +308,123 @@ EOF
 
 printf "BASH:\t%s\n" $BASH_VERSION >> $logfile
 ```
+---
+title:
+	- Awesome Bash Commands
+---
+
+# Tar
+
+```bash
+tar -cvf file1.tar file2.txt	# compress a file
+tar -xvf file1.tar						# extract a file
+```
+
+# Netcat
+
+```bash
+netcat -k -l 9999 >> example_log.txt		# listening server
+date | nc 192.168.0.4 9999							# send output of command
+nc localhost 4444 < /bin/bash						# 
+```
+
+# Nmap
+
+```bash
+nmap -sP		# ping
+nmap -sT		# 3-way handshake
+nmap -sV		# system version
+sudo nmap -O 
+
+# nmap scripts
+# agressive / non agressive scripts
+nmap -sC 192.168.0.22
+nmap --script "http-*" 192.168.0.34
+nmap --script "(ssh and not brute)"
+nmap -A			# not recommanded, agressive
+```
+
+```
+xz -d someting.img.xz
+dd if=smthin.img of=/dev/s bs=4MB status=progress
+```
+---
+title:
+	- Awesome Bash Commands
+---
+
+# Tar
+
+```bash
+tar -cvf file1.tar file2.txt	# compress a file
+tar -xvf file1.tar						# extract a file
+```
+
+# Netcat
+
+```bash
+netcat -k -l 9999 >> example_log.txt		# listening server
+date | nc 192.168.0.4 9999							# send output of command
+nc localhost 4444 < /bin/bash						# 
+```
+
+# Nmap
+
+```bash
+nmap -sP		# ping
+nmap -sT		# 3-way handshake
+nmap -sV		# system version
+sudo nmap -O 
+
+# nmap scripts
+# agressive / non agressive scripts
+nmap -sC 192.168.0.22
+nmap --script "http-*" 192.168.0.34
+nmap --script "(ssh and not brute)"
+nmap -A			# not recommanded, agressive
+```
+
+```
+xz -d someting.img.xz
+dd if=smthin.img of=/dev/s bs=4MB status=progress
+```
+---
+title:
+	- Awesome Bash Commands
+---
+
+# Tar
+
+```bash
+tar -cvf file1.tar file2.txt	# compress a file
+tar -xvf file1.tar						# extract a file
+```
+
+# Netcat
+
+```bash
+netcat -k -l 9999 >> example_log.txt		# listening server
+date | nc 192.168.0.4 9999							# send output of command
+nc localhost 4444 < /bin/bash						# 
+```
+
+# Nmap
+
+```bash
+nmap -sP		# ping
+nmap -sT		# 3-way handshake
+nmap -sV		# system version
+sudo nmap -O 
+
+# nmap scripts
+# agressive / non agressive scripts
+nmap -sC 192.168.0.22
+nmap --script "http-*" 192.168.0.34
+nmap --script "(ssh and not brute)"
+nmap -A			# not recommanded, agressive
+```
+
+```
+xz -d someting.img.xz
+dd if=smthin.img of=/dev/s bs=4MB status=progress
+```
