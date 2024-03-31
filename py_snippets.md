@@ -1,4 +1,9 @@
-
+# argv
+```python
+import sys
+print(sys.argv)
+# no. 0 is the file name
+```
 # Python color class
 
 ```python
