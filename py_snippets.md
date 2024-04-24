@@ -111,3 +111,18 @@ class Color:
     B_LightCyan = "\x1b[106m"
     B_White = "\x1b[107m"
 ```
+
+## Flask open dir
+
+```python
+from flask import Flask, send_from_directory
+
+app = Flask(__name__)
+
+@app.route('/uploads/<path:name>')
+def download(name):
+    return send_from_directory('uploads', name)
+
+if __name__ == '__main__':
+    app.run()
+```
