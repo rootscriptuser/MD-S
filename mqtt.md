@@ -85,12 +85,13 @@ sudo docker run -d --name mqttx-web -p 80:80 emqx/mqttx-web
 ```
 
 ```bash
+#https://manpages.debian.org/testing/systemd/systemd.service.5.en.html
 ExecStart =mosquitto_sub -v -t "topic/name" >> mylog.mqtt 
 #and enable it with e.g. 
 sudo systemctl enable path/to/mylogmqtt.service
-
 ```
 
+# Additional commands
 
 ```
 docker pull eclipse-mosquitto
