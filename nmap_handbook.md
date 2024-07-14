@@ -1,12 +1,3 @@
----
-title : NMAP HANDBOOK
-geometry:
-    - top=10mm
-    - left=10mm
-    - right=20mm
-    - bottom=10mm
----
-
 # COMPILE FROM SOURCE
 
 ```bash
